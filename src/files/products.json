@@ -1,0 +1,81 @@
+[
+	{
+		"title": "Champiñón",
+		"description": "Hongo comestible de sabor suave.",
+		"price": 8.99,
+		"thumbnail": "./champinon.jpg",
+		"code": "CHM001",
+		"stock": 50,
+		"id": 1
+	},
+	{
+		"title": "Portobello",
+		"description": "Variedad grande y carnosa del champiñón.",
+		"price": 12.99,
+		"thumbnail": "./portobello.jpg",
+		"code": "PTB002",
+		"stock": 30,
+		"id": 2
+	},
+	{
+		"title": "Shiitake",
+		"description": "Hongo de origen asiático con sabor distintivo.",
+		"price": 14.99,
+		"thumbnail": "./shiitake.jpg",
+		"code": "SHT003",
+		"stock": 45,
+		"id": 3
+	},
+	{
+		"title": "Maitake",
+		"description": "Hongo con forma de abanico y textura suave.",
+		"price": 10.99,
+		"thumbnail": "./maitake.jpg",
+		"code": "MTK004",
+		"stock": 20,
+		"id": 4
+	},
+	{
+		"title": "Ostra",
+		"description": "Hongo con sabor agradable y textura delicada.",
+		"price": 9.99,
+		"thumbnail": "./ostra.jpg",
+		"code": "OST005",
+		"stock": 35,
+		"id": 5
+	},
+	{
+		"title": "Reishi",
+		"description": "Hongo medicinal con propiedades beneficiosas.",
+		"price": 18.99,
+		"thumbnail": "./reishi.jpg",
+		"code": "RSH007",
+		"stock": 15,
+		"id": 7
+	},
+	{
+		"title": "Hongo de pino",
+		"price": "77",
+		"id": 8
+	},
+	{
+		"title": "Hongos del sur",
+		"price": "88",
+		"id": 9
+	},
+	{
+		"title": "amanita",
+		"price": "44",
+		"id": 10
+	},
+	{
+		"title": "amanita muscaria",
+		"price": "55",
+		"id": 11
+	},
+	{
+		"title": "amanita 2",
+		"price": "4455",
+		"id": 12
+	}
+]
