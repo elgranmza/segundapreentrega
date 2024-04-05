@@ -1,0 +1,48 @@
+<div>
+    {{!-- <div>
+        <p>Agregá nuevos productos:</p>
+    </div>
+    <form action="/api/products" enctype="multipart/form-data" method="post">
+        <input name="title" placeholder="title">
+        <input name="category" placeholder="category">
+        <input name="description" placeholder="description">
+        <input name="price" placeholder="price">
+        <input name="code" placeholder="code">
+        <input name="stock" placeholder="stock">
+        <input type="file" name="thumbnail" id="thumbnail">
+        <input type="submit" value="Enviar">
+    </form> --}}
+    <div>
+        <p>Hola! Bienvenid@ {{user.first_name}}!</p>
+        <a href="/api/sessions/logout"><button>LogOut</button></a>
+        <p>Productos Disponibles:</p>
+    </div>
+    <div>
+        <ul style="list-style-type: none">
+            {{#each msg.docs}}
+            <hr>
+            <li>{{title}} {{price}}</li>
+            <p>id: {{_id}}</p>
+            <p>{{description}}</p>
+            <li><img src="{{thumbnail}}" alt="" height="100px"></li>
+
+            <button name="btn" id="{{_id}}">Agregar a carrito</button>
+
+            {{!-- <form action="/api/carts/{{cid}}/product/{{_id}}" enctype="multipart/form-data" method="post">
+                <input type="submit" value="Agregar a carrito">
+            </form>             --}}
+            {{/each}}
+        </ul>
+
+    {{#if msg.hasPrevPage}}
+    <a href="{{msg.prevPage}}" >Anterior</a>
+    {{/if}}
+
+    {{#if msg.hasNextPage}}
+    <a href="{{msg.nextPage}}" >Siguiente</a>
+    {{/if}}
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="/js/products.js"></script>

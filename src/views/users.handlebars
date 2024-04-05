@@ -1,0 +1,14 @@
+<div>
+    {{#if isAdmin}}
+        <ul>
+            {{#each users}}
+            <hr>
+            <li>{{first_name}} {{last_name}}</li>
+            <li>{{email}}</li>
+            <li><img src="{{thumbnail}}" alt="" height="100px"></li>
+            {{/each}}
+        </ul>
+    {{else}}
+        <div>Usuario no autorizado</div>
+    {{/if}}
+</div>
